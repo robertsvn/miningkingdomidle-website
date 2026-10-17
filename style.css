@@ -27,7 +27,7 @@ p{margin:.8rem 0 1.2rem}
 .store-link.apple img{width:156px;height:52px}
 .store-link.google img{width:202px;height:78px}
 .showcase{display:grid;gap:28px;margin-bottom:2.8rem;scroll-margin-top:1rem}
-.paper{background:var(--cream);border:2px solid #dfcca4;border-radius:26px;box-shadow:0 12px 32px #09261950;text-align:center;padding:2.25rem 2.4rem 2.6rem}
+.paper{min-width:0;background:var(--cream);border:2px solid #dfcca4;border-radius:26px;box-shadow:0 12px 32px #09261950;text-align:center;padding:2.25rem 2.4rem 2.6rem}
 .paper h2{font-size:clamp(1.8rem,3.3vw,2.5rem);color:var(--green);margin:0 0 2rem}
 .section-label{font-weight:700;font-size:.82rem;color:#647051;margin:0 0 .5rem;letter-spacing:.055em}
 .shot-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:2rem;max-width:970px;margin-inline:auto;padding:.8rem .7rem 1rem}
