@@ -35,13 +35,9 @@ p{margin:.8rem 0 1.2rem}
 .shot>a{display:block;border:3px solid #c5af78;border-radius:13px;overflow:hidden;box-shadow:0 10px 20px #24412b32;background:#13283a;transition:box-shadow .15s}
 .shot>a:hover{box-shadow:0 12px 25px #24412b50}
 .shot img{width:100%;height:auto}
-.mining-shots>.shot:first-child{transform:rotate(-3deg) translateY(7px)}
-.mining-shots>.shot:last-child{transform:rotate(3deg) translateY(7px)}
-.mining-shots>.shot:nth-child(2){position:relative;z-index:1}
-.gear-sections{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.gear-section{display:flex;align-items:center;flex-direction:column;padding-inline:1.5rem}
-.gear-section h2{max-width:400px;min-height:2.25em;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
-.gear-section .shot{max-width:285px}
+.mining-shots>.shot:first-child,.gear-shots>.shot:first-child{transform:rotate(-3deg) translateY(7px)}
+.mining-shots>.shot:last-child,.gear-shots>.shot:last-child{transform:rotate(3deg) translateY(7px)}
+.mining-shots>.shot:nth-child(2),.gear-shots>.shot:nth-child(2){position:relative;z-index:1}
 .upgrade-section{padding-bottom:3rem}
 .upgrade-shots{max-width:920px;gap:1.4rem;padding-inline:1.2rem}
 .upgrade-shots>.shot:first-child{transform:rotate(-5deg) translateY(14px)}
@@ -58,7 +54,9 @@ p{margin:.8rem 0 1.2rem}
 .document ul{padding-left:1.3rem}
 .skip{position:absolute;top:-7rem;left:1rem;padding:.7rem 1rem;border-radius:6px;background:var(--cream);z-index:3}
 .skip:focus{top:1rem}
-@media(max-width:850px){.wrap{width:calc(100% - 36px)}.paper{padding:1.8rem 1.4rem 2rem;border-radius:20px}.shot-row{gap:1rem;padding-inline:.3rem}.gear-sections{gap:22px}.gear-section h2{font-size:1.9rem;min-height:2.3em}.gear-section .shot{max-width:255px}.upgrade-shots{gap:.9rem;padding-inline:.7rem}.intro{padding-block:3rem 2.7rem}}
-@media(max-width:600px){:root{font-size:16px}body{background-attachment:scroll;background-size:auto,auto 1200px}.wrap{width:calc(100% - 28px)}.site-header{padding-block:1rem;align-items:flex-start;flex-direction:column;gap:.65rem}.site-header nav{gap:1.3rem}.intro{padding-block:2.4rem 2rem}.intro h1{max-width:480px;font-size:3.05rem}.intro>p{font-size:1.06rem}.showcase{gap:20px}.paper{padding:1.6rem .8rem 1.9rem;border-radius:18px}.paper h2{font-size:2rem;margin-bottom:1.5rem}.shot-row{gap:1.2rem;overflow-x:auto;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:min(69vw,280px);justify-content:start;scroll-snap-type:x mandatory;padding:1rem .7rem 1.4rem;scroll-padding-inline:.7rem}.shot-row .shot{scroll-snap-align:center;transform:none}.shot-row .shot:nth-child(2){transform:none}.gear-sections{grid-template-columns:1fr;gap:20px}.gear-section .shot{max-width:280px}.gear-section h2{min-height:0;max-width:290px}.upgrade-shots{gap:1.1rem}.document{padding:1.6rem 1.3rem;margin-block:1.5rem 2.5rem}.document h1{font-size:2.3rem}.site-footer nav{gap:1.3rem}.site-footer>p>a{overflow-wrap:anywhere}}
+.game-trailer{display:block;width:min(100%,300px);height:auto;aspect-ratio:888/1920;margin:2rem auto 0;border:0;background:transparent}
+.boss-shots{grid-template-columns:repeat(2,minmax(0,1fr));max-width:650px}
+@media(max-width:850px){.wrap{width:calc(100% - 36px)}.paper{padding:1.8rem 1.4rem 2rem;border-radius:20px}.shot-row{grid-template-columns:minmax(0,1fr);gap:1.6rem;max-width:340px;padding:.8rem .3rem 1rem}.shot-row>.shot:nth-child(n){transform:none}.intro{padding-block:3rem 2.7rem}}
+@media(max-width:600px){:root{font-size:16px}body{background-attachment:scroll;background-size:auto,auto 1200px}.wrap{width:calc(100% - 28px)}.site-header{padding-block:1rem;align-items:flex-start;flex-direction:column;gap:.65rem}.site-header nav{gap:1.3rem}.intro{padding-block:2.4rem 2rem}.intro h1{max-width:480px;font-size:3.05rem}.intro>p{font-size:1.06rem}.showcase{gap:20px}.paper{padding:1.6rem .8rem 1.9rem;border-radius:18px}.paper h2{font-size:2rem;margin-bottom:1.5rem}.document{padding:1.6rem 1.3rem;margin-block:1.5rem 2.5rem}.document h1{font-size:2.3rem}.site-footer nav{gap:1.3rem}.site-footer>p>a{overflow-wrap:anywhere}}
 @media(max-width:600px){.store-link.apple{padding:10px}.store-link.apple img{width:120px;height:40px}.store-link.google img{width:155px;height:60px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.shot>a{transition:none}}
