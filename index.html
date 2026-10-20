@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Dig deeper, craft new gear and upgrade your miner in Mining Kingdom Idle.">
   <link rel="stylesheet" href="style.css">
+  <script src="trailer.js" defer></script>
   <title>Mining Kingdom Idle</title>
 </head>
 <body class="home">
@@ -14,17 +15,24 @@
   <nav aria-label="Main navigation"><a href="#gameplay">Gameplay</a><a href="support.html">Support</a></nav>
 </header>
 <main id="main">
-  <section class="intro wrap">
+  <section class="intro wrap hero-compact">
     <h1>Mining Kingdom Idle</h1>
-    <p>Dig deeper and build a stronger miner.</p>
+    <p class="tagline">Dig deeper and build a stronger miner.</p>
     <div class="store-links">
       <a class="store-link apple" href="#" data-unlinked-store="app-store" aria-disabled="true"><img src="assets/app-store.svg" alt="Download on the App Store" width="156" height="52"></a>
       <a class="store-link google" href="#" data-unlinked-store="google-play" aria-disabled="true"><img src="assets/google-play.png" alt="Get it on Google Play" width="202" height="78"></a>
     </div>
-    <video class="game-trailer" controls playsinline preload="metadata" width="888" height="1920" poster="assets/gameplay-trailer-poster.webp" aria-label="Mining Kingdom Idle gameplay trailer">
-      <source src="assets/gameplay-trailer.mp4" type="video/mp4">
-      <a href="assets/gameplay-trailer.mp4">Watch the Mining Kingdom Idle gameplay trailer.</a>
-    </video>
+    <a class="trailer-teaser" href="assets/gameplay-trailer.mp4" data-open-trailer aria-haspopup="dialog" aria-controls="gameplay-trailer-dialog">
+      <span class="teaser-play" aria-hidden="true">▶</span>
+      <span class="teaser-copy"><strong>Watch gameplay</strong><span>30-second trailer</span></span>
+    </a>
+    <dialog class="trailer-dialog" id="gameplay-trailer-dialog" aria-label="Mining Kingdom Idle gameplay trailer">
+      <button class="trailer-close" type="button" data-close-trailer aria-label="Close trailer" autofocus>Close ✕</button>
+      <video controls playsinline preload="none" width="888" height="1920" poster="assets/gameplay-trailer-poster.webp" aria-label="Mining Kingdom Idle gameplay trailer">
+        <source src="assets/gameplay-trailer.mp4" type="video/mp4">
+        <a href="assets/gameplay-trailer.mp4">Watch the Mining Kingdom Idle gameplay trailer.</a>
+      </video>
+    </dialog>
   </section>
   <div class="showcase wrap" id="gameplay">
     <section class="mining-section paper">
