@@ -30,8 +30,15 @@ p{margin:.8rem 0 1.2rem}
 .paper{min-width:0;background:var(--cream);border:2px solid #dfcca4;border-radius:26px;box-shadow:0 12px 32px #09261950;text-align:center;padding:2.25rem 2.4rem 2.6rem}
 .paper h2{font-size:clamp(1.8rem,3.3vw,2.5rem);color:var(--green);margin:0 0 2rem}
 .section-label{font-weight:700;font-size:.82rem;color:#647051;margin:0 0 .5rem;letter-spacing:.055em}
-.description-copy{max-width:760px;margin-inline:auto;text-align:left}
-.description-copy p:last-child{margin-bottom:0}
+.game-description{scroll-margin-top:1rem}
+.game-description h2{margin-bottom:1rem}
+.description-lead{max-width:760px;margin:0 auto .65rem;font-size:1.14rem;font-weight:700}
+.description-summary{max-width:760px;margin:0 auto 1.8rem}
+.description-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;max-width:900px;margin-inline:auto;text-align:left}
+.description-copy p{margin:0}
+.description-notes{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.5rem;max-width:900px;margin:1.8rem auto 0;padding-top:1.2rem;border-top:1px solid var(--line)}
+.description-notes p{margin:0;font-size:.92rem}
+.description-notes p:first-child{font-weight:700}
 .shot-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:2rem;max-width:970px;margin-inline:auto;padding:.8rem .7rem 1rem}
 .shot{margin:0 auto;width:100%;max-width:292px}
 .shot>a{display:block;border:3px solid #c5af78;border-radius:13px;overflow:hidden;box-shadow:0 10px 20px #24412b32;background:#13283a;transition:box-shadow .15s}
@@ -76,4 +83,5 @@ html:has(.trailer-dialog[open]){overflow:hidden}
 @media(max-width:600px){.store-link.apple{padding:10px}.store-link.apple img{width:120px;height:40px}.store-link.google img{width:155px;height:60px}}
 @media(max-width:850px){.trailer-teaser{min-height:190px}}
 @media(max-width:600px){.intro.hero-compact{padding-block:2.4rem 2rem}.hero-compact>.tagline{font-size:1.06rem}.trailer-teaser{min-height:180px;gap:.8rem;padding:1.3rem 1rem}.teaser-play{flex-basis:54px;height:54px;font-size:1.3rem}.teaser-copy strong{font-size:1.6rem}.teaser-copy>span{font-size:.9rem}}
+@media(max-width:600px){.description-lead{font-size:1.06rem}.description-summary{margin-bottom:1.4rem}.description-copy{grid-template-columns:minmax(0,1fr);gap:1rem}.description-notes{gap:.7rem;margin-top:1.4rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.shot>a{transition:none}}
