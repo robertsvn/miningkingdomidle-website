@@ -70,9 +70,9 @@ p{margin:.8rem 0 1.2rem}
 .teaser-copy{display:grid;gap:.25rem}
 .teaser-copy strong{font:700 2rem/1.1 Fredoka,"Trebuchet MS",sans-serif;text-shadow:0 2px 4px #102718}
 .teaser-copy>span{font:400 1rem/1.5 Nunito,"Segoe UI",sans-serif}
-.trailer-dialog{position:fixed;padding:0;border:0;overflow:visible;background:transparent;width:min(90vw,calc((100dvh - 120px) * 888 / 1920));max-width:none;max-height:none}
+.trailer-dialog{position:fixed;padding:0;border:0;overflow:visible;background:transparent;width:min(90vw,calc((100dvh - 120px) * 886 / 1920));max-width:none;max-height:none}
 .trailer-dialog::backdrop{background:#061b13e8}
-.trailer-dialog video{display:block;width:100%;height:auto;aspect-ratio:888/1920;max-height:calc(100dvh - 120px);background:transparent}
+.trailer-dialog video{display:block;width:100%;height:auto;aspect-ratio:886/1920;max-height:calc(100dvh - 120px);background:transparent}
 .trailer-close{position:absolute;right:0;top:-47px;padding:.4rem .75rem;font:700 .85rem/1.5 Nunito,"Segoe UI",sans-serif;color:#fff;border:2px solid #79a9de;border-radius:12px;background:linear-gradient(#3d8bd7,#154f98);box-shadow:0 3px 0 #092f60,0 6px 14px #0005;cursor:pointer}
 .trailer-close:hover{background:linear-gradient(#559de3,#1d62ad)}
 .trailer-teaser:focus-visible,.trailer-close:focus-visible{outline:3px solid #f0cd7d;outline-offset:5px}
